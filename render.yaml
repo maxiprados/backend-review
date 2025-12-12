@@ -1,0 +1,18 @@
+# Render deployment configuration
+# Render detectará automáticamente Node.js
+
+# Build Command: npm install
+# Start Command: npm start
+
+# Environment Variables to configure in Render Dashboard:
+# - PORT=5000
+# - MONGODB_URI
+# - GOOGLE_CLIENT_ID
+# - GOOGLE_CLIENT_SECRET
+# - GOOGLE_CALLBACK_URL (update with Render URL)
+# - CLOUDINARY_CLOUD_NAME
+# - CLOUDINARY_API_KEY
+# - CLOUDINARY_API_SECRET
+# - JWT_SECRET
+# - SESSION_SECRET
+# - FRONTEND_URL (update with Vercel URL)
