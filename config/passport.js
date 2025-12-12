@@ -1,5 +1,8 @@
 import dotenv from 'dotenv';
-dotenv.config();
+// Solo cargar dotenv en desarrollo (en producción Railway ya carga las variables)
+if (process.env.NODE_ENV !== 'production') {
+  dotenv.config();
+}
 
 import passport from 'passport';
 import { Strategy as GoogleStrategy } from 'passport-google-oauth20';
