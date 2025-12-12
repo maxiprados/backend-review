@@ -7,12 +7,15 @@ import express from 'express';
 import cors from 'cors';
 import session from 'express-session';
 import connectDB from './config/database.js';
-import passport from './config/passport.js';
+import passport, { configurePassport } from './config/passport.js';
 import authRoutes from './routes/authRoutes.js';
 import reviewRoutes from './routes/reviewRoutes.js';
 
 // Conectar a la base de datos
 connectDB();
+
+// Configurar Passport después de cargar variables de entorno
+configurePassport();
 
 const app = express();
 
